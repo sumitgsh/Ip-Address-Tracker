@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*
+{
+    /* box-sizing: border-box; */
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+font-size: 1.6rem;
+min-height: 100vh;
+}
+
+.container
+{
+
+}
+
+
+.search-bar
+{
+ display: flex;
+ flex-direction: column;
+ align-items: center;  
+ padding: 2rem; 
+ color: black;
+ flex-wrap: wrap;
+ background-image: url("./images/pattern-bg.png");
+ min-height: 30vh;
+}
+
+.search-form
+{
+    display: flex;
+    justify-content: center;
+    padding: 2.4rem;
+}
+
+#header
+{
+    color: white;
+}
+
+input[type="text"]{
+    width: 20em;
+    height: 2.4rem;
+    border:2px solid white;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    padding: 0 14px;
+}
+
+input.search
+{
+    border-bottom-left-radius:12px;
+    border-top-left-radius: 12px;
+}
+
+.search-form img
+{
+    cursor: pointer;
+    padding: 12px;
+    width: 16px;
+    height: 1.2rem;
+    margin: 0;
+    background: black;
+    border-bottom-right-radius:12px;
+    border-top-right-radius: 12px;
+   
+}
+
+
+input:focus{
+    outline: none;
+}
+
+.search-info
+{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left:10%;
+    font-weight: bold;
+    flex-wrap: wrap;
+    width: 80%;
+    z-index: 2;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #ffffff;
+    position: absolute;
+    top:210px;
+}
+.card
+{
+    padding:1.7rem;
+    align-content: center;
+}
+
+.card  .header
+{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: rgb(158,158,158);
+    padding: 1rem 0;
+}
+@media only screen and (max-width: 700px) {
+    .card {
+      width:100%;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  #mapid { 
+    
+      height: 480px;
+      z-index: 1;
+     }
+
+ footer{
+     font-size: 1.2rem;
+     text-align: center;
+ }    

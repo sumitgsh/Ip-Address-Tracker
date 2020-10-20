@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title> IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <div class="search-bar"> 
+      <div> 
+        <h3 id="header"><b>IP Address Tracker</b></h3>
+      </div>
+        <div class=search-form> 
+            <input type="text" class="search" id="search_val" placeholder="Search for any IP address or Domain">
+            <img src="./images/icon-arrow.svg" id="searchBtn">
+        </div>
+    </div>
+    <div class="search-info">
+
+        <div class="card">
+            <div class="header">
+              Ip Address
+            </div>
+              <div id="ip">
+                  127.22.34.11
+              </div>
+        </div>
+
+        <div class="card">
+          <div class="header">
+            Location
+          </div>
+          <div id="loc">
+              Brokylyn NY00001
+          </div>
+        </div>
+
+        <div class="card" >
+          <div class="header">
+            Time Zone
+          </div>
+          <div id="timezone">
+              BTC UC:500
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="header">
+            Isp
+          </div>
+          <div id="isp">
+            SpaceX StartLink
+          </div>
+        </div>
+
+    </div>
+    <div id="mapid"></div>
+
+
+  </div>
+<footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sumit Ghosh</a>.
+</footer>
+
+<script src="style.js"></script>
+</body>
+</html>
