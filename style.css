@@ -111,14 +111,19 @@ input:focus{
 }
 @media only screen and (max-width: 700px) {
     .card {
+     padding: 0.3rem;
       width:100%;
       align-items: center;
       text-align: center;
     }
     .search-form
     {
-        width: 20rem;
+        width: 14rem;
     }
+    .header{
+        padding: 0.2rem 0;
+    }
+
     #mapid 
     {
         height: 920px;
